@@ -11,26 +11,6 @@ canvas {
     touch-action: none;
 }
 
-@mixin track {
-    box-sizing: border-box;
-    height: 6px;
-    background: #fff;
-    -webkit-appearance: none;
-    appearance: none;
-}
-
-@mixin thumb {
-    box-sizing: border-box;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background: #fff;
-    border: 2px solid black;
-    -webkit-appearance: none;
-    appearance: none;
-    cursor: grab;
-}
-
 input {
     position: fixed;
     left: 50%;
@@ -46,24 +26,60 @@ input {
         cursor: grabbing;
     }
     &::-webkit-slider-runnable-track {
-        @include track
+        box-sizing: border-box;
+        height: 6px;
+        background: #fff;
+        -webkit-appearance: none;
+        appearance: none;
     }
     &::-moz-range-track {
-        @include track
+        box-sizing: border-box;
+        height: 6px;
+        background: #fff;
+        -webkit-appearance: none;
+        appearance: none;
     }
     &::-ms-track {
-        @include track
+        box-sizing: border-box;
+        height: 6px;
+        background: #fff;
+        -webkit-appearance: none;
+        appearance: none;
     }
     &::-webkit-slider-thumb {
         margin-top: -12px;
-        @include thumb
+        box-sizing: border-box;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: #fff;
+        border: 2px solid black;
+        -webkit-appearance: none;
+        appearance: none;
+        cursor: grab;
     }
     &::-moz-range-thumb {
-        @include thumb
+        box-sizing: border-box;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: #fff;
+        border: 2px solid black;
+        -webkit-appearance: none;
+        appearance: none;
+        cursor: grab;
     }
     &::-ms-thumb {
         margin-top: 0px;
-        @include thumb
+        box-sizing: border-box;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: #fff;
+        border: 2px solid black;
+        -webkit-appearance: none;
+        appearance: none;
+        cursor: grab;
     }
 }
 
